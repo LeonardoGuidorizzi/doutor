@@ -14,16 +14,34 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 128px;
+    animation: zoom 1.5s;
 }
 @media (max-width:768px){
     html{
         height: 100vh;
     }
+    nav{
+        display: none
+    }
+    .links-container{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+    }
     body{
+        overflow: hidden;
         padding: 0 30px;
         background-color:#0009;
         background-image: url(./img/background\ 1.png);
         background-blend-mode: darken;
         background-position: 90%;
+    }
+}
+@keyframes zoom{
+    0%{
+        transform: scale(4);
+    }
+    100%{
+        transform:scale(1) ;
     }
 }

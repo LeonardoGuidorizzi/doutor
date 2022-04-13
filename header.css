@@ -23,11 +23,33 @@ header {
 .links-container a:hover {
     background-color: var(--accent-color);
 }
-@media (max-width:768){
+@media (max-width:768px){
     header{
         height: 70px;
     }
     .links-container{
-    display: none;
+        display: flex;
     }
+     .links-container{
+        text-align: center;
+        justify-content: center;
+        background-color: #000;
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        gap:65;
+        font-size: 2.5rem;
+        font-weight: 300;
+        transform: translate(100%);
+        transition: all 1s;
+
+
+    }
+    .menu-burger-container.show ~ .links-container{
+        transform: translate(0);
+    } 
 }
