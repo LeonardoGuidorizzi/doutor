@@ -22,6 +22,9 @@ header {
 
 .links-container a:hover {
     background-color: var(--accent-color);
+    color: #1d1d1d1d;
+    text-shadow: none;
+    
 }
 @media (max-width:768px){
     header{
